@@ -89,6 +89,7 @@ jobs:
           mkdir -p "$user"
           rules="$user/custom_rules.mk"
           config="$user/custom_config.h"
+          touch "$rules" "$config"
 
           artifact_build_name=`echo "miryoku_qmk ${{ matrix.keyboard }}" | tr '/' '_'`
           for option in "alphas=${{ matrix.alphas }}" "nav=${{ matrix.nav }}" "clipboard=${{ matrix.clipboard }}" "layers=${{ matrix.layers }}" "mapping=${{ matrix.mapping }}"
