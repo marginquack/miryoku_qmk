@@ -85,8 +85,8 @@ jobs:
         run: |
           artifact_dir="artifacts"
           mkdir "$artifact_dir"
-          ls users
           user='users/manna-harbour_miryoku'
+          mkdir -p "$user"
           rules="$user/custom_rules.mk"
           config="$user/custom_config.h"
 
