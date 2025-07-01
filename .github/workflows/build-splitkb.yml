@@ -9,4 +9,4 @@ jobs:
     uses: ./.github/workflows/main.yml
     with:
       keyboard: '["splitkb/halcyon/elora/rev2"]'
-      nav: 'vi'
+      nav: '["vi"]'
